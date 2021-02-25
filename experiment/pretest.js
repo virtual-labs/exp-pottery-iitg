@@ -89,24 +89,37 @@
 
 
      const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1.What is Estimated Vessel Equivalents?", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "number of pieces identified as the same", ///// Write the option 1 inside double quotes
+                b: "total weight of pieces identified as the same", ///// Write the option 2 inside double quotes
+                c: "measuring the percentage of surviving pot rim from individual vessels",
+                d: "the broken sherds",
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "c" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "What is sherd count?",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "recording the number of pieces identified as the same",                  ///// Write the option 1 inside double quotes
+        b: "recording the total weight of pieces",                  ///// Write the option 2 inside double quotes
+        c: "recording the total weight of pieces identified as the same",
+        d: "measuring the percentage of surviving pot rim",      
+      },
+      correctAnswer: "a"                ///// Write the correct option inside double quotes
     },
 
-
+{
+      question: "Why do we compare prehistoric ceramics with regional ceramic sequences?",  ///// Write the question inside double quotes
+      answers: {
+        a: "for metric attributes",                  ///// Write the option 1 inside double quotes
+        b: "to place the assemblage into chronological and cultural context",                  ///// Write the option 2 inside double quotes
+        c: "identification of vessel form, function, and design",
+        d: "identification of manufacturing techniques",      
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
+    },
 
      ];
 

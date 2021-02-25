@@ -89,21 +89,25 @@
 
 
     const myQuestions = [{
-            question: "1.This is a sample question:", ///// Write the question inside double quotes
+            question: "1. What is main reason to Collect & Study pottery?", ///// Write the question inside double quotes
             answers: {
-                a: "This is a sample answer A", ///// Write the option 1 inside double quotes
-                b: "This is a sample answer B", ///// Write the option 2 inside double quotes
+                a: "it was easily broken, does not decay", ///// Write the option 1 inside double quotes
+                b: "could not be recycled", ///// Write the option 2 inside double quotes
+                c: "often the most abundant type of artifact",
+                d: "all of them",
             },
-            correctAnswer: "a" ///// Write the correct option inside double quotes
+            correctAnswer: "d" ///// Write the correct option inside double quotes
         },
 
     {
-      question: "<img src='images/8.PNG'><br>Identify the location of Secondary electron detector",  ///// Write the question inside double quotes
+      question: "2.What do you understand by experimental studies?",  ///// Write the question inside double quotes
       answers: {
-        a: "<img src='images/1b.png'>",                  ///// Write the option 1 inside double quotes
-        b: "<img src='images/1a.png'>",                  ///// Write the option 2 inside double quotes
-        c: "<img src='images/1c.PNG'>",      },
-      correctAnswer: "c"                ///// Write the correct option inside double quotes
+        a: "studies consist of controlled experiments used in manufacturing processes by refitting",                  ///// Write the option 1 inside double quotes
+        b: "studies consist of controlled experiments used to replicate prehistoric ceramic manufacturing processes",                  ///// Write the option 2 inside double quotes
+        c: "studies consist of uncontrolled experiments used to replicate posthistoric ceramic manufacturing processes",   
+        d: "both a and b"     
+      },
+      correctAnswer: "b"                ///// Write the correct option inside double quotes
     },
 
 

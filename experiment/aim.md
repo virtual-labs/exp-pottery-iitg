@@ -1,1 +1,1 @@
-### Aim of the experiment
+### Pottery-Virtual Reconstruction of Shapes
