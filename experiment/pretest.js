@@ -100,7 +100,7 @@
         },
 
     {
-      question: "What is sherd count?",  ///// Write the question inside double quotes
+      question: "2.What is sherd count?",  ///// Write the question inside double quotes
       answers: {
         a: "recording the number of pieces identified as the same",                  ///// Write the option 1 inside double quotes
         b: "recording the total weight of pieces",                  ///// Write the option 2 inside double quotes
@@ -111,7 +111,7 @@
     },
 
 {
-      question: "Why do we compare prehistoric ceramics with regional ceramic sequences?",  ///// Write the question inside double quotes
+      question: "3.Why do we compare prehistoric ceramics with regional ceramic sequences?",  ///// Write the question inside double quotes
       answers: {
         a: "for metric attributes",                  ///// Write the option 1 inside double quotes
         b: "to place the assemblage into chronological and cultural context",                  ///// Write the option 2 inside double quotes
