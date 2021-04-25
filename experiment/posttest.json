@@ -1,0 +1,19 @@
+[{
+	"question": "1. What is main reason to Collect & Study pottery?",
+	"answers": {
+		"a": "it was easily broken, does not decay",
+		"b": "could not be recycled",
+		"c": "often the most abundant type of artifact",
+		"d": "all of them"
+	},
+	"correctAnswer": "d"
+}, {
+	"question": "2.What do you understand by experimental studies?",
+	"answers": {
+		"a": "studies consist of controlled experiments used in manufacturing processes by refitting",
+		"b": "studies consist of controlled experiments used to replicate prehistoric ceramic manufacturing processes",
+		"c": "studies consist of uncontrolled experiments used to replicate posthistoric ceramic manufacturing processes",
+		"d": "both a and b"
+	},
+	"correctAnswer": "b"
+}]
