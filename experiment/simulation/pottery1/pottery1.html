@@ -1,76 +1,72 @@
 <script src="js/jquery.js"></script>
 
 <style type="text/css">
-	
-	
     /*#divmm{width:200px;height:400px;border:1px solid #aaaaaa; margin-top:-45%;margin-left: 50%; background-color: #055B26; float: left;}*/
-    #mainimg{
-    	  padding: 50px 20px 0px 50px;
-        margin:auto auto auto auto;
+    #mainimg {
+        padding: 50px 20px 0px 50px;
+        margin: auto auto auto auto;
         height: 867px;
-        width: 1307px;
-        background-image: url("image/finalpottery1.jpg");
-    	  background-repeat: no-repeat;
+        width: 1051px;
+        /* background-color: red; */
+        background-image: url(image/finalpottery1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
         vertical-align: middle;
         position: center;
-        align-content:center;
-        align-items:center; 
-        font-family: Calibri;  
-        
-    }
+        align-content: center;
+        align-items: center;
+        font-family: Calibri;
 
-    #div1{
-        
-        height: 200px;
+    }
+    .rdiv{
+        height: 150px;
         float: left;
-        width: 100px;
+        width: 120px;
         position: relative;
-        margin-left: 8.5%;
+        border: 1px dotted white;
+
+    }
+    .rdiv>img{
+        height: 120px;
+        padding: auto;
+    }
+    #div1 {
+        margin-left: 5.5%;
         margin-top: 20%;
         //border: 1px solid red;
     }
 
-     #div2{
-        
-        height: 200px;
-        float: left;
-        width: 100px;
-        position: relative;
-        margin-left: 3.5%;
+    #div2 {
+        margin-left: 1%;
         margin-top: 20%;
         //border: 1px solid red;
     }
 
-     #div3{
-        
-        height: 200px;
-        float: left;
-        width: 100px;
-        position: relative;
-        margin-left: 3.8%;
+    #div3 {
+        margin-left: 1%;
         margin-top: 20%;
         //border: 1px solid red;
     }
 
-     #div4{
-        
-        height: 200px;
-        float: left;
-        width: 100px;
-        position: relative;
-        margin-left: 3.8%;
+    #div4 {
+        margin-left: 1%;
         margin-top: 20%;
         //border: 1px solid red;
     }
 
-    .part1 {
-        width:49%;
-        height: 49%;
+    .part {
+        width: 50%;
+        height: 45%;
         float: left;
         //background: purple;
         //border: 1px solid red;
     }
-    .part2 {
+
+    .part>img {
+        height: 120px;
+    }
+
+    /* .part2 {
         width:49%;
         height: 49%;
         float: left;
@@ -90,15 +86,14 @@
         float: left;
         //background: silver;
         //border: 1px solid red;
+    } */
+
+    body {
+        height: 100%;
+        background-color: darkgreen;
     }
 
-    body{
-    	height: 100%;
-      background-color: darkgreen;
-    }
-
-    .left
-    { 
+    .left {
         color: white;
         //font-size:130%;
         margin-left: -2%;
@@ -106,124 +101,122 @@
         text-decoration: none;
         width: 40%;
         float: left;
-        height:65%;
+        height: 65%;
         //border: 1px solid red;
-        
+
     }
 
 
-    #below{ 
+    #below {
         color: white;
         margin-left: -40%;
         margin-top: 50%;
         text-decoration: none;
         width: 40%;
         float: left;
-        height:10%;
+        height: 10%;
         //border: 1px solid red;
-        
+
     }
 
-    #humarus{
-         width: 80px;
-         border: 1px solid red;
+    #humarus {
+        width: 80px;
+        border: 1px solid red;
     }
 
-    #innominate{
-       margin-top: 30px;
-       width: 80px;
-       border: 1px solid red;
-   }
-    .submit{
-        margin-left:-100px;
+    #innominate {
+        margin-top: 30px;
+        width: 80px;
+        border: 1px solid red;
+    }
+
+    .submit {
+        margin-left: -100px;
         margin-top: 0px;
         color: green;
 
-     }
-
+    }
 </style>
 
 <script>
 
 
-function gonext()
-{
-  
-  window.location.href='pottery2.html';
-}
+    function gonext() {
+
+        window.location.href = 'pottery2.html';
+    }
 
 
-function allowDrop(ev)
-{
-ev.preventDefault();
-}
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
 
-function drag(ev)
-{
-ev.dataTransfer.setData("Text",ev.target.id);
-}
+    function drag(ev) {
+        ev.dataTransfer.setData("Text", ev.target.id);
+    }
 
-function drop(ev)
-{
-ev.preventDefault();
-var data=ev.dataTransfer.getData("Text");
-ev.target.appendChild(document.getElementById(data));
-}
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("Text");
+        ev.target.appendChild(document.getElementById(data));
+    }
 
-function checklocation()
-{
-    var a = document.getElementById("diamt").value; 
-    
-    if($('#div4').find('#drag4').length == 1)
-   { 
-      if(a==11){
-      alert("CORRECT!");
-      }
-      else
-      {
-        alert("Please enter a correct value");
-      }  
-   }   
-   else 
-   {
-    alert("Wrong!");
-   }
-}
+    function checklocation() {
+        var a = document.getElementById("diamt").value;
+
+        if ($('#div4').find('#drag4').length == 1) {
+            if (a == 11) {
+                alert("CORRECT!");
+            }
+            else {
+                alert("Please enter a correct value");
+            }
+        }
+        else {
+            alert("Wrong!");
+        }
+    }
 
 
 </script>
-<body >
 
-<div id="mainimg" ondrop="drop(event)" ondragover="allowDrop(event)">
+<body>
 
-
-<div class="left" align="center">
-    <div class="part1"><img id="drag2" src="image/pot2.png" draggable="true" ondragstart="drag(event)" align="center"></div>
-    <div class="part2"><img id="drag1" src="image/pot1.png" draggable="true" ondragstart="drag(event)" align="center"></div>
-    <div class="part3"><img id="drag4" src="image/pot4.png" draggable="true" ondragstart="drag(event)" align="center"></div>
-    <div class="part3"><img id="drag3" src="image/pot3.png" draggable="true" ondragstart="drag(event)" align="center"></div>
-</div>
-
-<div id="below">
-    <input type="text" name="diameter" id="diamt" style="margin-top: 7%; margin-left: 20%; height: 30px; position: center;">
-    <input type="submit" name="Check" value="Check" onclick="checklocation()">
-    <input type="submit" name="Next" value="Next" onclick="gonext();">
-</div>
-
-<div class="right">
-
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-</div>
+    <div id="mainimg" ondrop="drop(event)" ondragover="allowDrop(event)">
 
 
-</div>
+        <div class="left" align="center">
+            <div class="part" id="part1"><img id="drag2" src="image/pot2.png" draggable="true" ondragstart="drag(event)"
+                    align="center"></div>
+            <div class="part" id="part2"><img id="drag1" src="image/pot1.png" draggable="true" ondragstart="drag(event)"
+                    align="center"></div>
+            <div class="part" id="part3"><img id="drag4" src="image/pot4.png" draggable="true" ondragstart="drag(event)"
+                    align="center"></div>
+            <div class="part" id="part4"><img id="drag3" src="image/pot3.png" draggable="true" ondragstart="drag(event)"
+                    align="center"></div>
+        </div>
+
+        <div id="below">
+            <input type="text" name="diameter" id="diamt"
+                style="margin-top: 7%; margin-left: 20%; height: 30px; position: center;">
+            <input type="submit" name="Check" value="Check" onclick="checklocation()">
+            <input type="submit" name="Next" value="Next" onclick="gonext();">
+        </div>
+
+        <div class="right">
+
+            <div class="rdiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div class="rdiv" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div class="rdiv" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+            <div class="rdiv" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        </div>
+
+
+    </div>
 
 
 </body>
