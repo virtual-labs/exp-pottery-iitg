@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css" />
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css" />
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+      integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+    <header class="vlabs-header sticky-top bg-white">
+      <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+        
+        <button class="navbar-toggler px-4"
+        	    type="button" onclick="toggle()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="d-flex justify-content-center">        
+          <a href="http://vlab.co.in" class="navbar-brand">
+            <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo">
+          </a>
+        </div>
+        
+        <div id="headerNavbar" class="border-top flex-grow-1 d-flex align-items-center">
+          <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in">HOME</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/participating-institutes">PARTNERS</a>
+            </li>
+            <li class="nav-item px-2 m-1">
+              <a href="http://vlab.co.in/contact-us">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+      <div class="row flex-grow-1 px-4 d-flex flex-nowrap">
+        <div class="nav flex-column sidebar flex-shrink-0" id="menu">
+            <div>
+              <div class="d-flex">
+                <a href="index.html" class="p-2 ">
+                  Aim
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="theory.html" class="p-2  current-item ">
+                  Theory
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="pretest.html" class="p-2 ">
+                  Pretest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="procedure.html" class="p-2 ">
+                  Procedure
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="simulation.html" class="p-2 ">
+                  Simulation
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="posttest.html" class="p-2 ">
+                  Posttest
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="references.html" class="p-2 ">
+                  References
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="d-flex">
+                <a href="feedback.html" class="p-2 ">
+                  Feedback
+                </a>
+                
+              </div>
+              <div id="t-"
+                
+                   class="collapse" 
+                >
+                <div class="px-1 d-flex flex-column tasks">
+                </div>
+              </div>
+            </div>
+        </div>        <div class="vlabs-page-content px-4 pb-4 flex-grow-1 markdown-body">
+          <div class="text-center">
+            <h2 id="pottery-virtual-reconstruction-of-shapes">Pottery-Virtual Reconstruction of Shapes</h2>
+        
+          </div>
+            <h3 id="introduction---archaeological-ceramics-pots-and-potters">Introduction - Archaeological Ceramics, Pots and Potters:</h3>
+        <h3 id="current-approaches-in-ceramic-archaeology-pottery-analysis">Current Approaches in Ceramic Archaeology, Pottery Analysis:</h3>
+        <p>Ceramic artifacts, made from fired clay, and stone tools are the most durable objects created by prehistoric peoples. While archaeologically durable, ceramics have another attribute that makes them invaluable to archaeologists—they break or wear out during use, thus entering the archaeological record fairly soon after manufacture. These two important characteristics of ceramics have garnered them a long and enduring role as primary data in archaeological inquiry. The archaeologist surrounded in the laboratory by thousands of pot sherds sorted into meaningful piles on long lab tables is an image that is bound to be with the discipline for as long as it is practiced.</p>
+        <p>The art of manufacturing pottery was discovered about 12,000 years ago in the Old World and about 5,000 years ago in the New World. Pottery manufacture generally accompanied the transition to food production and increasing sedentism in the prehistory of most parts of the world. Pottery has been of enormous benefit to humanity in the form of the most common everyday objects—water carriers, food storage vessels, cooking vessels, and serving vessels. Precisely because of the intimate relationship among everyday activities such as food storage, preparation, and consumption, pottery has long been one of the primary types of artifacts collected by archaeologists. Ceramics are not limited to utilitarian wares, however, and include fine wares for ceremonial functions and trade as well as other types of objects such as figurines, jewelry, and even toys. One of the enduring benefits of clay as a raw material is its plasticity, allowing the artisan to shape and form it to myriad functional and imaginative requirements. In addition to formal and functional characteristics derived from the plasticity of the raw material, pottery often conveys additional information about its makers and users in the form of painted designs and illustrations. From simple geometric patterns to the elaborate illustrative decorations of Maya or Chinese ceramics, artisans added important stylistic and even political and mythological information to their pottery for millennia. To this day, few people fail to be stirred by the wonderful painted decorations of Classical Grecian urns or the marvelous zoomorphic creatures on Mimbres pots. From their first invention and on through the ages, ceramic objects served crucial functional, aesthetic, and informational purposes for peoples all around the world. </p>
+        <p>All of the attributes of ceramic artifacts shape, size, type of clay, type of temper, surface treatment, and painting, to name a few serve as a rich and varied set of data for archaeologists intent on reconstructing past human life ways. There are essentially four types of analyses that archaeologists perform on ceramic artifacts in order to obtain the data contained within them: experimental studies, form and function analysis, stylistic analysis, and technological analysis.</p>
+        <p>Experimental studies consist of controlled experiments used to replicate prehistoric ceramic manufacturing processes. From these studies, archaeologists gain valuable information on firing techniques, firing temperatures, and the properties of various tempers, glazes, and paints. In addition to replicative experimentation, archaeologists have also taken advantage of ethnographic observations of traditional pottery manufacturing from societies around the world to better understand the manufacture, use, and reuse of pottery in traditional cultures. </p>
+        <p> The analysis and interpretation of ‘Pottery’ (ceramics) materials allows archaeologists to accomplish a variety of tasks: establish times scales, Document interconnections between different areas, and propose activities, interactions, and identities in the past.</p>
+        <h3 id="why-is-pottery-important-to-historians">Why is pottery important to historians?</h3>
+        <p>The shapes of vessel and the modes of decoration change through time, and so pottery can be used to understand the periods during which a site was occupied. In addition, pottery was traded (either for itself or because it was used as a container for other products such as wine or oil), and so the presence of imported objects on a site can tell us about the way in which the inhabitants of the site were involved in trade with other regions.</p>
+        <h3 id="why-do-we-collect-and-study-pottery">Why do we collect and study pottery?</h3>
+        <p>Pottery is often the most abundant type of artifact within an archaeological assemblage because it was easily broken, does not decay and could not be recycled.  During most time periods pottery was reasonably cheap to replace and almost everyone used it.  In this respect, it is very useful for archaeologists because it presents us with a significant sample of material that provides information about how people from all levels of society lived in the past.</p>
+        <h3 id="how-do-we-analyze-pottery">How do we analyze pottery?</h3>
+        <p>The analysis of prehistoric ceramics allows archaeologists to construct cultural sequences, reconstruct daily life, investigate patterns of long-distance exchange, and examine questions of social inequality.</p>
+        <p>Identification of vessel form, function, and design</p>
+        <p>Identification of manufacturing techniques</p>
+        <p>Typology and seriation</p>
+        <p>Quantitative recording of metric attributes</p>
+        <p>Comparisons with regional ceramic sequences to place the assemblage into chronological and cultural context</p>
+        <p>Using this method of classification helps us to identify different types of pottery. Pottery recovered from an excavation is almost always broken with whole pots rarely discovered.  This is because most of the time we are dealing with rubbish left behind by people at some point in time.</p>
+        <h3 id="what-sort-of-information-can-we-obtain">What sort of information can we obtain?</h3>
+        <p>Once we have created a dataset, analysis of a pottery assemblage can give an insight into three main areas. In order to create a dataset that we can use to look for patterns based on the classified pot types, the broken sherds (pieces of pot) need to be quantified.  The three methods commonly used to achieve this are:</p>
+        <p>1.Sherd count (recording the number of pieces identified as the same)</p>
+        <ol start="2">
+        <li><p>Weight of sherds (recording the total weight of pieces identified as the same)</p>
+        </li>
+        <li><p>Estimated Vessel Equivalents (measuring the percentage of surviving pot rim from individual vessels). At least two methods are always used together to try and make the quantification as accurate as possible.</p>
+        <h3 id="dating-and-chronology">Dating and Chronology:</h3>
+        </li>
+        </ol>
+        <p>The abundance of pottery and its multiplicity of form, fabric and decoration, as much as the vast literature on the material, conspire to make pottery, in many ways, the ideal medium for carrying chronological information. Dating evidence acquired at one site or context, perhaps an association between a pottery type and a historically – dated event such as a destruction horizon, may be attached to the pot, or an element such as its forms, decoration or fabrics. Its appearance may be subsequently being employed to date other contexts, where other pottery types may be dated by secondary association.</p>
+        <p>It may be recognized that particular forms vary in a consists and predictable fashion, perhaps allowing a particular vessel to be placed at a point in a developmental (and hence potential chronological) sequence.</p>
+        <h3 id="trade-and-exchange">Trade and Exchange:</h3>
+        <p>A fabric series provides examples of pots made in different places and by comparing fabrics we can work out where a vessel has come from.  This gives us information about trade both in terms of where pots are being made but also what products they may have contained. </p>
+        <h3 id="social-status-and-function">Social Status and Function:</h3>
+        <p>Some types of pot were used for particular things, for example cooking, storage, eating and drinking.  Comparing the amounts of different functional types can give an insight into how a site or part of a site was being used.  Some imported pottery was more expensive to buy than local wares, so working out the quantities of more expensive items can indicate relative wealth.  It is also important to combine information gained from pottery with other things such as animal bone and environmental evidence, to look at issues such as cuisine and trading of goods.</p>
+        <h3 id="conclusion">Conclusion:</h3>
+        <h3 id="the-future-of-pottery-studies">The Future of Pottery studies</h3>
+        <p>We have, on the other hand, an ever increasing range of tools at our disposal with which to examine our material. These are applicable not only at the level of the individual sherd or fabric, but also to the relationship between assemblages. These patterns are not only <code>internal</code> between different types of ceramics: but also with other classes of artifacts. More than ever before, pottery studies must argue actively for a place at the ‘high table’ of archaeology.</p>
+        <p>The combination of abundance, near indestructibility and almost unique plasticity of the medium conspire to make the ceramic assemblage one of the most resources from archaeological site.</p>
+        
+        </div>
+      </div>
+    </div>
+    <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+      <div class="row px-5">
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+          <a href="http://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+          <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+          <a href="http://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+          <span> Phone: General Information: 011-26582050 </span>
+          <span> Email: support@vlabs.ac.in </span>
+        </div>
+        <div class="col d-flex flex-column">
+          <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+          <div class="social-links">
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+    	  <i class="fa fa-twitter"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+    	  <i class="fa fa-facebook"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+    	  <i class="fa fa-youtube"></i>
+    	</a>
+    	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+    	  <i class="fa fa-linkedin"></i>
+    	</a>
+          </div>
+        </div>
+      </div>
+      <div class="m-0 py-2 text-center" style='font-family: "Open Sans", sans-serif; background: #212121;'>
+        <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+        &nbsp;&amp;&nbsp;
+        <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+      </div>
+    </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  </body>
+</html>

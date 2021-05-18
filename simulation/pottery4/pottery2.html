@@ -1,0 +1,191 @@
+<script src="js/jquery.js"></script>
+
+<style type="text/css">
+	
+	
+    #divmm{width:200px;height:400px;border:1px solid #aaaaaa; margin-top:-45%;margin-left: 50%; background-color: #055B26; float: left;}
+    #mainimg{
+    	background-image: url("image/finalpottery111.jpg");
+    	background-repeat: no-repeat;
+        height: 900px;
+        float: left;
+        width: 100%;
+        position: relative;
+        margin-left: 15%;
+        
+    }
+
+    #div1{
+        
+        height: 170px;
+        float: left;
+        width: 170px;
+        position: relative;
+        margin-left: 5.5%;
+        margin-top: 12%;
+        
+    }
+
+     #div2{
+        
+        height: 170px;
+        float: left;
+        width: 170px;
+        position: relative;
+        margin-left: 24.5%;
+        margin-top: 12%;
+        
+    }
+
+    
+
+    body{
+    	height: 100%;
+    }
+
+    .left
+    { 
+        color: white;
+        font-size:130%;
+        
+        margin-top: 5%;
+        text-decoration: none;
+        width: 18%;
+        float: left;
+        height:75%;
+        
+    }
+
+       a{
+        text-decoration: none;
+        color: white;
+    }
+
+    #humarus{
+         width: 80px;
+    }
+
+    #innominate{
+       margin-top: 30px;
+       width: 80px;
+   }
+     .submit{
+        margin-left:-110px;
+        margin-top: 46%;
+        color: green;
+
+     }
+
+</style>
+
+<script>
+
+
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+
+function check()
+{
+    //var a = document.getElementById("diamt").value; 
+    //alert("hello");
+
+    if($('#div1').find('#drag1').length == 1)
+   { 
+      if($('#div2').find('#drag3').length == 1)
+      {
+           alert("CORRECT!");
+      }
+      else
+      {
+        alert("Please enter a correct value");
+      }  
+   }   
+   else 
+   {
+    alert("Wrong!");
+   }
+}
+
+
+</script>
+<body >
+
+
+<!--<div id="mainimg" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+<div class="left" >
+
+ <img src="image/pot2.png" draggable="true" ondragstart="drag(event)">
+ <img src="image/pot1.png" draggable="true" ondragstart="drag(event)"> 
+ <img src="image/pot4.png" draggable="true" ondragstart="drag(event)"> 
+ <img src="image/pot3.png" draggable="true" ondragstart="drag(event)">
+
+</div>
+
+<div class="right" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+ <div id="d1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+ <div id="d2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+ <div id="d3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+ <div id="d4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>-->
+
+<div id="mainimg" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+
+<div class="left">
+    <!--<img id="drag2" src="image/pot2.png" draggable="true" ondragstart="drag(event)">-->
+    <img id="drag1" src="image/pot2.png" draggable="true" ondragstart="drag(event)" style="margin-left: 19%; margin-top: 1%; position: static;">
+    
+    <img id="drag2" src="image/arc1.png" draggable="true" ondragstart="drag(event)" style="margin-left: 15%; margin-top: 25%; ">
+    <img id="drag3" src="image/arc2.png" draggable="true" ondragstart="drag(event)" style="margin-left: 15%; margin-top: 25%; ">
+    <img id="drag4" src="image/arc3.png" draggable="true" ondragstart="drag(event)" style="margin-left: 15%; margin-top: 25%; ">
+    <img id="drag5" src="image/arc4.png" draggable="true" ondragstart="drag(event)" style="margin-left: 15%; margin-top: 25%; ">
+
+   
+</div>
+
+<div class="right">
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+</div>
+<!--<input type="submit" name="submit" onclick="check()" value="Submit" class="submit">-->
+
+
+
+<input type="submit" name="Next" value="Submit" onclick="check();">
+
+</div>
+
+
+
+<!--<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<img id="drag1" src="demo.jpg" draggable="true"
+ondragstart="drag(event)" width="336" height="69">
+
+
+<div id="div2" ondrop="drop(event)"
+ondragover="allowDrop(event)"></div>
+<img id="drag1" src="shape1.jpg" draggable="true"
+ondragstart="drag(event)" width="336" height="69">-->
+
+</body>
